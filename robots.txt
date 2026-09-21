@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eng-abdulhmeed.github.io/me/sitemap.xml

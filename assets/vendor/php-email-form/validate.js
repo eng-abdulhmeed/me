@@ -50,10 +50,25 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
+    if (action.startsWith('mailto:')) {
+      const email = action.replace('mailto:', '');
+      const name = formData.get('name') || '';
+      const subject = encodeURIComponent(formData.get('subject') || 'Contact from Website');
+      const message = encodeURIComponent(`From: ${name} (${formData.get('email') || ''})\n\n${formData.get('message') || ''}`);
+      window.location.href = `mailto:${email}?subject=${subject}&body=${message}`;
+      thisForm.querySelector('.loading').classList.remove('d-block');
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+      thisForm.reset();
+      return;
+    }
+
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      headers: {
+        'Accept': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
+      }
     })
     .then(response => {
       if( response.ok ) {
@@ -64,7 +79,19 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      let isSuccess = false;
+      try {
+        const json = JSON.parse(data);
+        if (json.success || json.ok || json.status === 'success') {
+          isSuccess = true;
+        }
+      } catch (e) {
+        if (data.trim() === 'OK') {
+          isSuccess = true;
+        }
+      }
+
+      if (isSuccess || data.trim() === 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {

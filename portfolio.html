@@ -4,9 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Portfolio | Eng. ABDULHMEED ABO-HATEM - Web &amp; Software Projects</title>
+  <meta name="description" content="Showcase of web applications, interactive canvas editors, and software platforms developed by Eng. ABDULHMEED ABO-HATEM.">
+  <meta name="keywords" content="Portfolio, Web Applications, Greeting Cards Platform, Canvas Editor, Software Projects, React, Abdulhmeed Abo-Hatem">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eng-abdulhmeed.github.io/me/portfolio.html">
+  <meta property="og:title" content="Portfolio | Eng. ABDULHMEED ABO-HATEM">
+  <meta property="og:description" content="Showcase of web applications, interactive canvas editors, and software platforms.">
+  <meta property="og:image" content="https://eng-abdulhmeed.github.io/me/assets/img/profile/profile-square-11.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio | Eng. ABDULHMEED ABO-HATEM">
+  <meta name="twitter:description" content="Showcase of web applications, interactive canvas editors, and software platforms.">
+  <meta name="twitter:image" content="https://eng-abdulhmeed.github.io/me/assets/img/profile/profile-square-11.webp">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +28,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,10 +54,9 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
+            <a href="index.html" class="logo d-flex align-items-center">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">ABDULHMEED</span><span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -76,10 +88,10 @@
       </nav>
 
       <div class="header-social-links">
-        <a href="https://x.com/eng_abdulhmeed" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://github.com/eng-abdulhmeed" class="facebook"><i class="bi bi-github"></i></a>
-        <a href="https://instagram.com/abdh.eng" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.lenkidin.com/in/abdulhmeed abohatem" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/eng_abdulhmeed" class="twitter" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/eng-abdulhmeed" class="github" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://instagram.com/abdh.eng" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/abdulhmeed-abohatem" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
 
 
@@ -94,7 +106,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <p>Explore a selection of recent web platforms, interactive tools, and software solutions crafted with focus on performance, design, and user experience.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -102,180 +114,178 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-strategy">Web</li>
-            <li data-filter=".filter-finance">Design</li>
-            <li data-filter=".filter-operations">University Projects</li>
-            <li data-filter=".filter-technology">Technology</li>
+            <li data-filter=".filter-web">Web Applications</li>
+            <li data-filter=".filter-bot">Bots &amp; Automation</li>
+            <li data-filter=".filter-desktop">Desktop &amp; Systems</li>
+            <li data-filter=".filter-design">UI/UX &amp; Tools</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+
+            <!-- Project 1: WIDD Greeting Cards Platform -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-editor.jpg" alt="Portfolio Item" class="img-fluid">
+                  <img src="assets/img/portfolio/widd/cover.webp" alt="WIDD — Greeting Cards Platform" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-editor.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://greeting-cards.premiumasp.net/" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    <a href="assets/img/portfolio/widd/cover.webp" class="glightbox portfolio-lightbox" title="WIDD — Greeting Cards Platform"><i class="bi bi-plus"></i></a>
+                    <a href="https://greeting-cards.premiumasp.net/" target="_blank" rel="noopener noreferrer" class="portfolio-details-link" title="Visit Live Platform"><i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="portfolio-details.html#widd" class="portfolio-details-link" title="Case Study Details"><i class="bi bi-info-circle"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Greeting Cards Platform</h4>
-                  <p>Browse, create, and share beautiful digital greeting cards for various occasions.</p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <h4>WIDD — ودّ</h4>
+                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50" style="font-size: 0.75rem;">Live</span>
+                  </div>
+                  <p>منصة ويب عربية لإنشاء بطاقات تهنئة رقمية مخصصة وتصديرها كصورة PNG بجودة عالية.</p>
                   <div class="portfolio-tags">
-                    <span>Web Application</span>
-                    <span>Full-Stack</span>
-                    <span>UI/UX</span>
+                    <span>Laravel 12</span>
+                    <span>PHP</span>
+                    <span>Fabric.js</span>
+                    <span>MySQL</span>
                   </div>
                 </div>
               </div>
             </div>
 
-
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+            <!-- Project 2: WIDD Visual Card Editor -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-design">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-card.jpg" alt="Portfolio Item" class="img-fluid">
+                  <img src="assets/img/portfolio/widd/editor.webp" alt="WIDD Visual Card Editor" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-card.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://greeting-cards.premiumasp.net/editor" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    <a href="assets/img/portfolio/widd/editor.webp" class="glightbox portfolio-lightbox" title="WIDD Visual Card Editor"><i class="bi bi-plus"></i></a>
+                    <a href="https://greeting-cards.premiumasp.net/editor" target="_blank" rel="noopener noreferrer" class="portfolio-details-link" title="Visit Live Editor"><i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="portfolio-details.html#widd" class="portfolio-details-link" title="Case Study Details"><i class="bi bi-info-circle"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Greeting Card Editor</h4>
-                  <p>Interactive editor with real-time customization tools for designing unique greeting cards.</p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <h4>WIDD Card Editor</h4>
+                    <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50" style="font-size: 0.75rem;">Canvas Tool</span>
+                  </div>
+                  <p>محرر بطاقات تفاعلي في الوقت الحقيقي يدعم النصوص والصور واللغة العربية وسحب العناصر.</p>
                   <div class="portfolio-tags">
-                    <span>Canvas tools</span>
-                    <span>Drag & Drop</span>
-                    <span>Live Editing</span>
+                    <span>Fabric.js</span>
+                    <span>Canvas API</span>
+                    <span>Drag &amp; Drop</span>
+                    <span>Arabic RTL</span>
                   </div>
                 </div>
               </div>
             </div>
 
-
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+            <!-- Project 3: TomNum Telegram Number Marketplace Bot -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bot">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Item" class="img-fluid">
+                  <img src="assets/img/portfolio/tomnum/cover.webp" alt="TomNum — Telegram Number Marketplace Bot" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://eng-abdulhmeed.github.io/abdh.eng/" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    <a href="assets/img/portfolio/tomnum/cover.webp" class="glightbox portfolio-lightbox" title="TomNum — Virtual Number Bot"><i class="bi bi-plus"></i></a>
+                    <a href="https://t.me/TomNumbot" target="_blank" rel="noopener noreferrer" class="portfolio-details-link" title="Telegram Bot (@TomNumbot)"><i class="bi bi-telegram"></i></a>
+                    <a href="https://github.com/eng-abdulhmeed/telegram-bot" target="_blank" rel="noopener noreferrer" class="portfolio-details-link" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                    <a href="portfolio-details.html#tomnum" class="portfolio-details-link" title="Case Study Details"><i class="bi bi-info-circle"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Business Growth Strategy</h4>
-                  <p>Strategic Planning</p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <h4>TomNum — بوت أرقام</h4>
+                    <span class="badge bg-warning bg-opacity-25 text-warning border border-warning border-opacity-50" style="font-size: 0.75rem;">In Development</span>
+                  </div>
+                  <p>بوت Telegram لبيع وتوفير أرقام التفعيل الافتراضية مع أتمتة الدفع واستلام الـ SMS.</p>
                   <div class="portfolio-tags">
-                    <span>Strategy</span>
-                    <span>Consulting</span>
+                    <span>Python 3.12</span>
+                    <span>aiogram 3.x</span>
+                    <span>PostgreSQL</span>
+                    <span>Docker</span>
+                    <span>Cryptomus</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+            <!-- Project 4: Nawwar Knowledge Social Platform -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-desktop filter-design">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Portfolio Item" class="img-fluid">
+                  <img src="assets/img/portfolio/nawwar/cover.webp" alt="Nawwar — Knowledge Social Platform" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    <a href="assets/img/portfolio/nawwar/nawwar-dashboard.webp" class="glightbox portfolio-lightbox" title="Nawwar — Knowledge Dashboard"><i class="bi bi-plus"></i></a>
+                    <a href="https://github.com/eng-abdulhmeed/MyProjectNawwar" target="_blank" rel="noopener noreferrer" class="portfolio-details-link" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                    <a href="portfolio-details.html#nawwar" class="portfolio-details-link" title="Case Study Details"><i class="bi bi-info-circle"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Financial Restructuring</h4>
-                  <p>Financial Advisory</p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <h4>Nawwar — نوار</h4>
+                    <span class="badge bg-primary bg-opacity-25 text-info border border-primary border-opacity-50" style="font-size: 0.75rem;">Graduation Project</span>
+                  </div>
+                  <p>منصة اجتماعية معرفية متكاملة لتبادل المعرفة وإدارة الجلسات العلمية وغرف النقاش التفاعلية.</p>
                   <div class="portfolio-tags">
-                    <span>Finance</span>
-                    <span>Investment</span>
+                    <span>C# WinForms</span>
+                    <span>Graduation Project</span>
+                    <span>Social Feed</span>
+                    <span>Desktop App</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
+            <!-- Project 5: Multi-Tab Browser -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-desktop">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Portfolio Item" class="img-fluid">
+                  <img src="assets/img/portfolio/browser/cover.webp" alt="Multi-Tab Browser" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    <a href="assets/img/portfolio/browser/browser-active.webp" class="glightbox portfolio-lightbox" title="Multi-Tab Browser | مستكشف التبويبات المتعددة"><i class="bi bi-plus"></i></a>
+                    <a href="https://github.com/eng-abdulhmeed" target="_blank" rel="noopener noreferrer" class="portfolio-details-link" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                    <a href="portfolio-details.html#browser" class="portfolio-details-link" title="Case Study Details"><i class="bi bi-info-circle"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Supply Chain Optimization</h4>
-                  <p>Operations Management</p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <h4>Multi-Tab Browser</h4>
+                    <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50" style="font-size: 0.75rem;">Desktop Tool</span>
+                  </div>
+                  <p>متصفح ويب مكتبي بنظام تبويبات ديناميكي مستقل داخل أداة TabControl مع واجهة تصفح سريعة.</p>
                   <div class="portfolio-tags">
-                    <span>Operations</span>
-                    <span>Logistics</span>
+                    <span>C# / .NET</span>
+                    <span>WinForms</span>
+                    <span>TabControl</span>
+                    <span>Desktop App</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
+            <!-- Project 6: Warshatna Automotive Services Platform -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Portfolio Item" class="img-fluid">
+                  <img src="assets/img/portfolio/workshop/cover.webp" alt="ورشتنا — صيانة السيارات (أبو حمود)" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    <a href="assets/img/portfolio/workshop/cover.webp" class="glightbox portfolio-lightbox" title="ورشتنا — منصة خدمات صيانة السيارات (أبو حمود)"><i class="bi bi-plus"></i></a>
+                    <a href="https://github.com/eng-abdulhmeed" target="_blank" rel="noopener noreferrer" class="portfolio-details-link" title="GitHub Repository"><i class="bi bi-github"></i></a>
+                    <a href="portfolio-details.html#workshop" class="portfolio-details-link" title="Case Study Details"><i class="bi bi-info-circle"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Digital Transformation</h4>
-                  <p>Technology Consulting</p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <h4>ورشتنا — صيانة السيارات</h4>
+                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50" style="font-size: 0.75rem;">Web Platform</span>
+                  </div>
+                  <p>منصة ويب متكاملة لحجز مواعيد وخدمات صيانة وإصلاح السيارات واستعراض باقات الصيانة أونلاين.</p>
                   <div class="portfolio-tags">
-                    <span>Technology</span>
-                    <span>Innovation</span>
+                    <span>Web Platform</span>
+                    <span>HTML / CSS</span>
+                    <span>JavaScript</span>
+                    <span>Car Services</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Portfolio Item" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Market Expansion</h4>
-                  <p>Strategic Planning</p>
-                  <div class="portfolio-tags">
-                    <span>Strategy</span>
-                    <span>Growth</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Portfolio Item" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Investment Strategy</h4>
-                  <p>Financial Advisory</p>
-                  <div class="portfolio-tags">
-                    <span>Finance</span>
-                    <span>Investment</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div><!-- End Portfolio Items Container -->
 
         </div>
@@ -297,10 +307,10 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Eng. ABDULHMEED ABO-HATEM</strong> <span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/eng_abdulhmeed"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://github.com/eng-abdulhmeed"><i class="bi bi-github"></i></a>
-        <a href="https://instagram.com/abdh.eng"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.lenkidin.com/in/abdulhmeed abohatem"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/eng_abdulhmeed" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/eng-abdulhmeed" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://instagram.com/abdh.eng" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/abdulhmeed-abohatem" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
